@@ -1,0 +1,32 @@
+{
+	"name": "radekdvorak/apib-json-validator",
+	"description": "Reads JSON examples from apib API definition and validates them against JSON-schema, if provided",
+	"minimum-stability" : "dev",
+	"prefer-stable" : true,
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Radek Dvořák",
+			"email": "radek.dvorak@gmail.com"
+		}
+	],
+	"require": {
+		"hmaus/reynaldo": "^0.1.2",
+		"hmaus/drafter-php": "^4.0",
+		"justinrainbow/json-schema": "^5.2.0",
+		"nette/utils": "^2.4"
+	},
+	"autoload": {
+		"psr-4": {
+			"RadekDvorak\\ApibJsonValidator\\": "src/main/php"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"RadekDvorak\\ApibJsonValidator\\": "src/test/php"
+		}
+	},
+	"require-dev": {
+		"nette/tester": "^1.7"
+	}
+}
